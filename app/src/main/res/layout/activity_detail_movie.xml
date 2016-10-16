@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.thinha.lecture1.DetailMovieActivity">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDetailTitle"
+        tools:text="Hello world!"
+        android:textColor="@android:color/white"
+        android:layout_margin="@dimen/medium_margin"
+        android:textSize="@dimen/large_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:id="@+id/tvRelease_Date"
+        android:textSize="@dimen/medium_size"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPopularity"
+        android:textSize="@dimen/medium_size"
+        android:layout_margin="@dimen/medium_margin"
+        />
+
+    <RatingBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:isIndicator="true"
+        android:id="@+id/rating"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDetailOverview"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus nibh et mi porttitor rhoncus. Morbi a risus et ligula facilisis lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse rutrum, est accums"
+        android:textColor="@android:color/white"
+        android:layout_margin="@dimen/medium_margin"
+        android:textSize="@dimen/medium_size"/>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="@dimen/small_space"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivCover"
+        android:layout_weight = "1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/cover_height"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitle"
+            tools:text="Hello world!"
+            android:textColor="@android:color/white"
+            android:layout_margin="@dimen/small_space"
+            android:textSize="@dimen/large_size"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvOverview"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus nibh et mi porttitor rhoncus. Morbi a risus et ligula facilisis lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse rutrum, est accums"
+            android:textColor="@android:color/white"
+            android:layout_margin="@dimen/small_space"
+            android:textSize="@dimen/medium_size"/>
+
+    </LinearLayout>
+</LinearLayout>
